@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apaza.munidenuncias.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/img_munidenuncia"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Usuario"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginEnd="34dp" />
+
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Usuario"
+        android:layout_below="@+id/Usuario"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Contraseña"
+        android:layout_below="@+id/editTextusername"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="callLogin"
+        android:text="Ingresar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="callRegisterUsuario"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/button"
+        android:text="Registrar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>
